@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<p id="text">How are you doing?.</p>
+<button id="b1" value="Submit">Answer</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', BtnEvent);
+function BtnEvent() {
+    var button1 = document.getElementById('b1');
+    button1.addEventListener('click', btn1_Click);
+    
+}
+function btn1_Click() {
+  document.getElementById("text").innerHTML="I am fine";
+}
+</script>
+
+</body>
+</html>
